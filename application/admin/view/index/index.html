@@ -1,0 +1,18 @@
+hell0o wolrd
+<br>
+///{和$之间不能有空格不然无效
+
+
+{volist name="list" id="vo"}
+{$vo.admin_id}:{$vo.admin_name}<br>
+{/volist}
+
+<br>
+//循环遍历
+<br>
+{foreach $list as $vo}
+
+{eq name="$vo['admin_id']" value='5' }
+{$vo.admin_id}:{$vo.admin_name}<br>
+{/eq}
+{/foreach}
